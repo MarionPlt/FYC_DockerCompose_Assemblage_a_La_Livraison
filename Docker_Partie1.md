@@ -6,6 +6,7 @@ On a tous rencontré ce problème en travaillant sur un projet à plusieurs. Le 
 Le projet qui fonctionne en mode "développement" et qui ne fonctionne plus en mode "production".
 
 ![Meme Docker, source https://9gag.com/gag/abvyb7r?ref=ios](images/docker_meme.jpg)  
+*reduire taille image*  
 
 Et si on livrait plus que du code? Et si on livrait tout un package pour lancer notre application facilement? 
    
@@ -86,7 +87,7 @@ Vous le trouvez lui aussi trop long? Sachez qu'il suffit de saisir les premieres
 Attention, dans notre cas nous avions deux fois la même image, avec le même ID, ce qui va poser un problème de conflit au deamon. **A DEPLACER PLUS TARD QUAND PLUSIEURS IMAGES DIFFERENTES**   
 
 `docker image prune`
-Cette commande permet de faire table rase et de supprimer toutes les images locales orphelines, c'est-à-dire qui n'ont pas de tag ou de conteneur associé.  
+Cette commande permet de faire table rase et de supprimer toutes les images locales orphelines, c'est-à-dire des images qui n’ont plus de références, c.a.d. plus de containers qui les reference ni d’image qui les reference, ni de tags associés .  
 C'est une commande utile quand on n'a pas ouvert Docker pendant quelques temps et qu'on faire un peu de nettoyage!
 Si vous souhaitez supprimer toutes les images inutilisées (et pas seulement les orphelines), il suffit d'ajouter l'option `-a` ou `--all` . Cette commande supprimera **tous** les conteneurs qui ne sont pas utilisés.  
 
