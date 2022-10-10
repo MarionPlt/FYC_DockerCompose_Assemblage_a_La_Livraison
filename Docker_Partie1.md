@@ -87,16 +87,35 @@ Vous le trouvez lui aussi trop long? Sachez qu'il suffit de saisir les premieres
 Attention, dans notre cas nous avions deux fois la même image, avec le même ID, ce qui va poser un problème de conflit au deamon. **A DEPLACER PLUS TARD QUAND PLUSIEURS IMAGES DIFFERENTES**   
 
 `docker image prune`
-Cette commande permet de faire table rase et de supprimer toutes les images locales orphelines, c'est-à-dire des images qui n’ont plus de références, c.a.d. plus de containers qui les reference ni d’image qui les reference, ni de tags associés .  
+Cette commande permet de faire table rase et de supprimer toutes les images locales *orphelines*, c'est-à-dire des images qui n’ont plus de références, c.a.d. plus de containers qui les reference ni d’image qui les reference, ni de tags associés .  
 C'est une commande utile quand on n'a pas ouvert Docker pendant quelques temps et qu'on faire un peu de nettoyage!
-Si vous souhaitez supprimer toutes les images inutilisées (et pas seulement les orphelines), il suffit d'ajouter l'option `-a` ou `--all` . Cette commande supprimera **toutes** les images qui ne sont pas utilisés, alors soyez sûrs de vous.  
+Si vous souhaitez supprimer toutes les images inutilisées (et pas seulement les orphelines), il suffit d'ajouter l'option `-a` ou `--all` . Cette commande supprimera **toutes** les images qui ne sont pas utilisées, alors soyez sûrs de vous.  
 
    
 `docker image build`  
 Cette commande va nous permettre de créer une image Docker de toute pièce. Nous la verrons dans la suite de ce cours, un peu de patience! 
 Retenez juste qu'elle va s'écrire sous cette forme : ` docker image build [OPTIONS] PATH | URL | -`   
 
-### docker container
+### docker container  
+
+#### docker container run  
+
+Commençons par lancer un conteneur. Rappelez vous qu'un conteneur contient un processus, et c'est celui ci que nous allons démarrer.  
+La commande se présente sous cette forme : ``docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]`` .  
+
+Nous allons prendre le temps de présenter plusieurs options utiles pendant ce cours. Encore une fois, n'hésitez pas à vous référer à la [documentation Docker](https://docs.docker.com/) pour découvrir toutes les commandes qui sont à votre disposition.   
+`--detach`, `-d`  
+Cette option permet de lancer un conteneur en arrière plan.
+`-rm`
+Cette option permet de supprimer le conteneur lorqu'on l'éteint.
+`--name`  
+Permet de donner un nom au conteneur. Par défaut un nom est attribué au conteneur, il est généré par le deamon de façon aléatoire et le résultat est parfois amusant. Toutefois quand vous voulez vous y retrouver dans vos conteneur, mieux vaut les nommer.  
+`--publish`, `-p`  
+Permet de publier un port sur la machine host. Rappelez vous qu'un conteneur est hermétique, si ous souhaitons y accéder via un navigateur, ou si nous souhaitons faire communiquer pusieurs conteneurs, il faut que ces derniers exposent des ports.  
+`--user`, `-u`
+Permet de définir un user. Par défaut le user est 0, ce qui correspond au user root. Définir un autre user permet d'éviter d'avoir des droits root sur le conteneur.
+
+
 `docker container ls` ou `docker ps` ou `docker ps -a`  
 `docker container exec`  
 `docker container kill`  
@@ -104,14 +123,8 @@ Retenez juste qu'elle va s'écrire sous cette forme : ` docker image build [OPTI
 `docker container prune`  
 `docker container restart`  
 `docker container rm`  
-`docker container run`  
 `docker container start`  
 `docker container stop`  
 
-### docker run
-`docker run [OPTIONS] IMAGE [COMMAND] [ARG...]`  
 
-`--detach`, `-d`  
-`--name`  
-`--publish`, `-p`  
-`--user`, `-u`  
+NB : DOCKER EST IDEMPOTENT
