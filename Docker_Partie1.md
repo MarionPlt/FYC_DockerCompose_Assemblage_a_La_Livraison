@@ -89,7 +89,7 @@ Attention, dans notre cas nous avions deux fois la même image, avec le même ID
 `docker image prune`
 Cette commande permet de faire table rase et de supprimer toutes les images locales orphelines, c'est-à-dire des images qui n’ont plus de références, c.a.d. plus de containers qui les reference ni d’image qui les reference, ni de tags associés .  
 C'est une commande utile quand on n'a pas ouvert Docker pendant quelques temps et qu'on faire un peu de nettoyage!
-Si vous souhaitez supprimer toutes les images inutilisées (et pas seulement les orphelines), il suffit d'ajouter l'option `-a` ou `--all` . Cette commande supprimera **tous** les conteneurs qui ne sont pas utilisés.  
+Si vous souhaitez supprimer toutes les images inutilisées (et pas seulement les orphelines), il suffit d'ajouter l'option `-a` ou `--all` . Cette commande supprimera **toutes** les images qui ne sont pas utilisés, alors soyez sûrs de vous.  
 
    
 `docker image build`  
