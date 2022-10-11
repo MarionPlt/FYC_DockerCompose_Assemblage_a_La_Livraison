@@ -73,7 +73,7 @@ Récupérer l'image *hello-world* avec le tag `linux` , si vous listez à nouvea
 ![liste images docker 1 image 2 tags](images/docker-image/docker-image2-cmd.png)   
 ![liste images docker desktop 1 image 2 tags](images/docker-image/docker-image2.png)
 
-####docker image rm  
+#### docker image rm  
 Nous avons maintenant deux images *hello-world* avec deux tags différents sur notre machine. Nous allons en garder une seule pour plus de simplicité. 
 Pour supprimer une image stockée en local, vous pouvez utiliser le Docker Desktop ou bien saisir la commande `docker image rm <image>:<tag>` .  
 Supprimez l'image *hello-world* qui possède le tag `linux`, pour ne garder que la `latest` . Vérifiez en listant les images restantes en local.  
