@@ -38,7 +38,9 @@ Enfin, Docker peut tourner sur n'importe quelle OS.
 Voyons ici quelques commandes basiques que nous allons réutiliser tout le long du cours.  
 Cette liste est loin d'etre exhaustive, n'hésitez pas à consulter la [documentation Docker](https://docs.docker.com/) pour découvrir toutes les commandes qui sont à votre disposition !
 
-Nous allons tester plusieurs de ces commandes avec l'image *hello-world* de Docker. Nous allons les présenter sous deux formats : en ligne de commande et via le Docker Desktop. À la fin de ce module, vous pourrez choisir ce qui vous convient le mieux au quotidien.  
+Nous allons tester plusieurs de ces commandes avec l'image *hello-world* de Docker. Nous allons les présenter en ligne de commande pour mieux les intégrer.   
+Des exemples sur un Docker Desktop Windows sont aussi disponibles pour vous montrer l'interface. 
+À la fin de ce cours, vous serez libres de choisir la façon dont vous préférez utiliser Docker ! 
 
   
 ### docker image 
@@ -161,4 +163,29 @@ Cette commande vous permet de supprimer un conteneur en ajoutant à la suite le 
 
 Cette commande permet de supprimer **tous** les conteneurs éteints. 
 
- 
+
+## Quizz
+**Un conteneur**
+- permet de lancer une image Docker (F)
+- est par défaut lancé avec le user root (V)
+- est toujours supprimé une fois arrêté (F)
+- est une instance exécutable d'une image (V)
+
+**Une image**
+- possède un identifiant (V)
+- ne peut être téléchargée qu'une seule fois (F : tags)
+- est toujours stockée dans le DockerHub (F)
+- peut contenir des variables d'environnement (V)
+
+**Pour lister toutes les images je dois faire la commande**
+- ``docker ps`` 
+- ``docker image prune`` 
+- ``docker image ls``
+- ``docker image ps``
+
+**Pour supprimer tous les conteneurs qui ne sont pas utilisés je dois faire la commande**
+-``docker rm all``
+-``docker conteneur rm``
+-``docker container prune``
+-``docker container prune --all``
+
