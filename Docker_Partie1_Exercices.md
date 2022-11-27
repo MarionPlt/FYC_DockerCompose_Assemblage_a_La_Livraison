@@ -21,7 +21,7 @@ qu'une image créée il y  a plusieurs années sans mises à jour.
 
 ### La base de données
 
-Nous allons tout d'abord récupérer [l'image Docker bdd_vault.](https://hub.docker.com/r/pmarionp/bdd_vault) La documentation de l'image vous donne : 
+Nous allons tout d'abord récupérer [l'image Docker pmarionp/bdd_vault.](https://hub.docker.com/r/pmarionp/bdd_vault) La documentation de l'image vous donne : 
 - la commande pour télécharger l'image grâce à un pull
 - la commande pour lancer le conteneur
 
@@ -52,3 +52,49 @@ Listez ensuite les conteneurs en cours d'éxécution pour vérifier du bon fonct
 
 
 ![](images/docker-exercice/docker_run_bdd.png)  
+
+### Le backend .NET
+
+Nous allons ensuite récupérer [l'image Docker pmarionp/back_vault.](https://hub.docker.com/r/pmarionp/back_vault) La documentation de l'image vous donne :
+- la commande pour télécharger l'image grâce à un pull
+- la commande pour lancer le conteneur
+
+**Commençons donc par la commande ``docker pull pmarionp/back_vault``.
+Vous pouvez ensuite lister les images présentes sur votre Docker pour vous assurer du bon téléchargement.**
+
+![](images/docker-exercice/docker_pull_back.png)  
+<br>
+<br>
+<br>
+
+
+La commande pour lancer un conteneur pour cette image a plusieurs options, nous allons choisir par défaut de connecter le port du conteneur au port host 5000.
+Si vous choisissez un autre port, pensez à le prendre en compte dans les commandes qui suivront.
+
+``docker run -d -p 5000:5000 pmarionp/back_vault``
+
+**Exécutez la commande permettant de lancer un conteneur pour l'image pmarionp/bdd_vault.
+Listez ensuite les conteneurs en cours d'éxécution pour vérifier du bon fonctionnement de votre commande.**
+
+À partir de cette étape, si vous avez bien lu la documentation de l'image pmarionp/back_vault, vous pouvez accéder au swagger du backend .NET en allant dans votre outil de 
+navigation favori et en allant sur l'adresse http://localhost:5000/swagger.
+
+Afin de s'assurer de la bonne connexion entre la base de donnée et le backend, nous allons insérer un nouveau livre en base.
+Cliquez sur la ligne POST/Book puis sur le bouton "Try it out". Insérez ensuite les données suivantes puis appuyez sur "Execute".
+
+``
+{
+"label": "Livre autocentré",
+"type": "Book",
+"releaseDate": "2010-11-20T19:03:44.357Z",
+"support": "Papier",
+"imageURL": "https://img.freepik.com/vecteurs-libre/livres-stack-realistic_1284-4735.jpg?w=2000",
+"editor": "Moi",
+"authors": "Me, myself and I",
+"volume": 1
+}
+``
+
+
+![](images/docker-exercice/docker_run_back.png)  
+
