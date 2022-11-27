@@ -19,6 +19,11 @@ Pour rappel, le Docker Hub est un espace de stockage et de récupération d'imag
 et vous devez rester vigilants sur les images que vous allez récupérer. Une image maintenue régulièrement sera une image plus digne de confiance
 qu'une image créée il y  a plusieurs années sans mises à jour.
 
+### Creation du network
+
+Dans un premier temps, nous allons créer un network sur lequel tous nos conteneurs vont interagir.
+**Créez un network nommé `network_vault`.**
+
 ### La base de données
 
 Nous allons tout d'abord récupérer [l'image Docker pmarionp/bdd_vault.](https://hub.docker.com/r/pmarionp/bdd_vault) La documentation de l'image vous donne : 
@@ -47,7 +52,8 @@ Cette option s'écrit `-p <port conteneur> : <port host>` . Dans notre cas nous 
 du conteneur sur un port host totalement différent. C'est ce qui fait la force de Docker, vous pouvez changer le port host par lequel accéder à votre conteneur d'une seule ligne de commande, 
 sans avoir à modifier des paramètres de l'application.
 
-**Exécutez la commande permettant de lancer un conteneur pour l'image pmarionp/bdd_vault. 
+**Exécutez la commande permettant de lancer un conteneur pour l'image pmarionp/bdd_vault.
+Pensez à connecter votre conteneur au network (soit dans la ligne de commande, soit dans un second temps).
 Listez ensuite les conteneurs en cours d'éxécution pour vérifier du bon fonctionnement de votre commande.**
 
 
@@ -74,13 +80,22 @@ Si vous choisissez un autre port, pensez à le prendre en compte dans les comman
 ``docker run -d -p 5000:5000 pmarionp/back_vault``
 
 **Exécutez la commande permettant de lancer un conteneur pour l'image pmarionp/bdd_vault.
+Pensez à connecter votre conteneur au network (soit dans la ligne de commande, soit dans un second temps).
 Listez ensuite les conteneurs en cours d'éxécution pour vérifier du bon fonctionnement de votre commande.**
 
-À partir de cette étape, si vous avez bien lu la documentation de l'image pmarionp/back_vault, vous pouvez accéder au swagger du backend .NET en allant dans votre outil de 
+![](images/docker-exercice/docker_run_back.png)  
+<br>
+<br>
+<br>
+À partir de cette étape, si vous avez bien lu la documentation de l'image pmarionp/back_vault, vous pouvez accéder au swagger du backend .NET en allant dans votre outil de
 navigation favori et en allant sur l'adresse http://localhost:5000/swagger.
+![](images/docker-exercice/swagger.png)
 
 Afin de s'assurer de la bonne connexion entre la base de donnée et le backend, nous allons insérer un nouveau livre en base.
-Cliquez sur la ligne POST/Book puis sur le bouton "Try it out". Insérez ensuite les données suivantes puis appuyez sur "Execute".
+Cliquez sur la ligne POST/Book puis sur le bouton "Try it out". 
+![](images/docker-exercice/swagger_book.png)
+
+Insérez ensuite les données suivantes puis appuyez sur "Execute".
 
 ``
 {
@@ -95,6 +110,7 @@ Cliquez sur la ligne POST/Book puis sur le bouton "Try it out". Insérez ensuite
 }
 ``
 
+Vous devez avoir un retour 200 de l'API ! 
+![](images/docker-exercice/swagger_POST.png)
 
-![](images/docker-exercice/docker_run_back.png)  
 
