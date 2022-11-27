@@ -189,3 +189,25 @@ Cette commande permet de supprimer **tous** les conteneurs éteints.
 -``docker container prune``
 -``docker container prune --all``
 
+
+### docker network
+
+Une notion importante quand on travaille avec plusieurs conteneurs : le network.
+Par défaut, un conteneur est lancé dans un network nommé ``bridge``. 
+Si on souhaite lancer plusieurs conteneurs qui communiquent ensemble, ils doivent se trouver sur le même network. 
+On peut les laisser sur le network par défaut, mais il est recommandé de créer un network attitré. 
+La documentation officielle vous permet à nouveau de compléter votre apprentissage, n'hésitez pas à la consulter ! 
+
+#### docker network ls  
+Cette commande permet de lister tous les networks existants. 
+#### docker network create
+Cette commande permet de créer un nouveau network. Elle s'écrit sous la forme ``docker network create <nom du network>``
+#### docker network rm
+Cette commande permet de supprimer un network.
+#### docker network prune
+Cette commande permet de supprimer tous les networks qui ne sont pas utilisés.
+#### docker connect ou docker disconnect  
+Cette commande permet de connecter/déconnecter un conteneur à un network existant. Cette commande peut s'executer même sur un conteneur lancé. 
+Elle s'écrit sous la forme 
+``docker network connect <nom du network> <nom du container> ``
+``docker network disconnect <nom du network> <nom du container> ``
