@@ -1,0 +1,65 @@
+# Partie 4 : Docker Hub
+
+## C'est quoi Docker Hub?
+
+Docker hub est un service fourni par Docker pour trouver et partager des images. C'est le plus grand répertoire d'
+images, et il en contient de toutes sortes :   
+communautés de développeurs, projets open source et vendeurs indépendants de logiciel vont y construire et distribuer
+leur code grâce à des conteneurs.
+
+Le Docker Hub vous permet de stocker et de récupérer des images (push et pull).
+
+Certaines images sont certifiées par Docker, prenez les en priorité pour forger vos images, car vous êtes assurés
+qu'elles sont bien documentées, qu'il y a des bonnes pratiques à suivre et des explications pour mettre en place l'image
+sur votre Docker.  
+
+![Official Image Docker](images/officialImages.jpg)  
+
+
+Les images officielles sont généralement des outils de base (OS, base de données, langages de programmation) qui vont
+servir de base pour beaucoup d'utilisateurs. Ces images sont maintenues et des mises jour de sécurité sont réalisées
+régulièrement.
+
+Des équipes Docker sont dédiées à la vérification et la publication d'images officielles, en collaboration avec des
+développeurs, des experts sécurité et la communauté Docker.  
+Si l'open-source vous intéresse, de nombreuses issues sont ouvertes sur Github et n'attendent que vous !
+
+Des badges "Verified publisher" sont aussi délivré pour des contenus certifiés de haute qualité fournis par des éditeurs
+externes faisant partie du programme Docker Verified Publisher.
+
+## Comment accéder à votre espace Docker Hub
+
+Si vous n'avez pas créé de compte Docker à l'installation, veuillez le faire maintenant !
+
+Vous pouvez ensuite accéder à votre espace de stockage sur Docker Hub.  
+Vous pouvez avoir accès à des répertoires publics gratuits pour stocker vos images. Si vous choisissez d'avoir des
+répertoires privés, vous devrez payer un abonnement à partir de 2 répertoires privés.
+
+Pour notre exercice, nous allons reprendre les DockerFile de votre base de données, de votre backend et de votre front
+et les pousser dans votre Docker Hub.  
+Placez-vous sur la
+branche ["2-dockerfile-td" du Github](https://github.com/a-chatelard/FYC-dock-co/tree/2-dockerfile-td/) pour accéder aux
+Dockerfile complets.
+
+Commençons avec la base de données. Placez-vous dans le dossier contenant le DockerFile de l'image base de données et
+exécutez la commande docker :   
+``docker build -t <votre_username>/bdd_vault <path du dossier contenant le dockerfile>``.
+
+Poussez ensuite votre image sur votre Docker Hub en utilisant la commande `` docker push <votre_username>/bdd_vault `` .
+
+Vous pouvez ensuite consulter votre DockerHub et constater l'apparition de l'image <votre_username>/bdd_vault !  
+Cliquez sur l'image et complétez la documentation pour ne pas oublier les commandes pour lancer votre conteneur, avec
+tous les paramètres obligatoires (comme le nom pour la base de données !) et ceux optionnels.  
+Vous pouvez prendre exemple sur la documentation de
+l'image [pmarionp/bdd_vault](https://hub.docker.com/r/pmarionp/bdd_vault).
+
+## Exercice
+Créez vos images pour le backend et le frontend puis poussez-les sur votre DockerHub.  
+Complétez la documentation de vos images ; vous pouvez vous baser sur la documentation des
+images [pmarionp/back_vault](https://hub.docker.com/r/pmarionp/back_vault)
+et [pmarionp/front_vault](https://hub.docker.com/r/pmarionp/front_vault).
+
+Retournez sur votre fichier docker-compose.yaml (ou reprenez à partir de la
+branche ["3-compose-correction-td" sur Github](https://github.com/a-chatelard/FYC-dock-co/tree/3-compose-correction-td))
+et changez les images pour utiliser celles que vous venez de pousser sur DockerHub. Lancez votre docker compose pour
+vous assurer du bon fonctionnement ! 
