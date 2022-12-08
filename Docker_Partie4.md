@@ -57,6 +57,29 @@ tous les paramètres obligatoires (comme le nom pour la base de données !) et c
 Vous pouvez prendre exemple sur la documentation de
 l'image [pmarionp/bdd_vault](https://hub.docker.com/r/pmarionp/bdd_vault).
 
+## Quizz
+
+### Les images stockées sur le Docker Hub
+* sont toutes certifiées par Docker
+* peuvent être certifiées par Docker
+* ne sont que des images créées par Docker Inc.
+
+### Les images certifiées sont (plusieurs réponses possibles)
+* vérifiées par des équipes dédiées de Docker Inc.
+* vérifiées par la communauté
+* payantes
+
+### Docker Hub
+* Est totalement gratuit
+* Est toujours payant
+* Fonctionne avec un abonnement au bout d'un certain nombre de registres privés
+
+### Pour pousser une image sur Docker Hub (plusieurs réponses possibles)
+* Vous devez avoir un compte Docker Hub
+* Le nom de votre image doit être de forme <username>/<image name>
+* Vous pouvez spécifier un tag à votre image
+
+
 ## Exercice
 Créez vos images pour le backend et le frontend puis poussez-les sur votre DockerHub.  
 Complétez la documentation de vos images ; vous pouvez vous baser sur la documentation des
