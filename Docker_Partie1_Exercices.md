@@ -114,3 +114,21 @@ Vous devez avoir un retour 200 de l'API !
 ![](images/docker-exercice/swagger_POST.png)
 
 
+
+## Exercice en solo
+
+Prérequis : vos conteneurs base de donnée et backend doivent être lancés, avec quelques données de tests ajoutées dans Swagger.
+
+Le cas échéant, retournez dans l'exercice pas à pas si vous avez oublié comment les démarrer !
+
+
+
+Cette fois-ci c'est à vous de faire !
+
+**Récupérez l'image frontend [pmarionp/front_vault](https://hub.docker.com/r/pmarionp/front_vault) et lancez un conteneur.
+
+Vérifiez que le conteneur est en cours d'exécution et voyez le résultat dans votre navigateur favori.**
+
+La correction se fera en vidéo juste [ici](https://www.youtube.com/watch?v=5z_ndACm9aA&t=1s) ! 
+
+

@@ -60,33 +60,22 @@ l'image [pmarionp/bdd_vault](https://hub.docker.com/r/pmarionp/bdd_vault).
 ## Quizz
 
 ### Les images stockées sur le Docker Hub
-* sont toutes certifiées par Docker
-* peuvent être certifiées par Docker
-* ne sont que des images créées par Docker Inc.
+* sont toutes certifiées par Docker (F)
+* peuvent être certifiées par Docker (V)
+* ne sont que des images créées par Docker Inc. (F)
 
 ### Les images certifiées sont (plusieurs réponses possibles)
-* vérifiées par des équipes dédiées de Docker Inc.
-* vérifiées par la communauté
-* payantes
+* vérifiées par des équipes dédiées de Docker Inc. (V)
+* vérifiées par la communauté (V)
+* payantes (F)
 
 ### Docker Hub
-* Est totalement gratuit
-* Est toujours payant
-* Fonctionne avec un abonnement au bout d'un certain nombre de registres privés
+* Est totalement gratuit (F)
+* Est toujours payant (F)
+* Fonctionne avec un abonnement au bout d'un certain nombre de registres privés (V)
 
 ### Pour pousser une image sur Docker Hub (plusieurs réponses possibles)
-* Vous devez avoir un compte Docker Hub
-* Le nom de votre image doit être de forme <username>/<image name>
-* Vous pouvez spécifier un tag à votre image
+* Vous devez avoir un compte Docker Hub (V)
+* Le nom de votre image doit être de forme <username>/<image name> (V)
+* Vous pouvez spécifier un tag à votre image (V)
 
-
-## Exercice
-Créez vos images pour le backend et le frontend puis poussez-les sur votre DockerHub.  
-Complétez la documentation de vos images ; vous pouvez vous baser sur la documentation des
-images [pmarionp/back_vault](https://hub.docker.com/r/pmarionp/back_vault)
-et [pmarionp/front_vault](https://hub.docker.com/r/pmarionp/front_vault).
-
-Retournez sur votre fichier docker-compose.yaml (ou reprenez à partir de la
-branche ["3-compose-correction-td" sur Github](https://github.com/a-chatelard/FYC-dock-co/tree/3-compose-correction-td))
-et changez les images pour utiliser celles que vous venez de pousser sur DockerHub. Lancez votre docker compose pour
-vous assurer du bon fonctionnement ! 
