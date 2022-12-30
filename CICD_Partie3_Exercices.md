@@ -55,7 +55,7 @@ Pour connaitre le numéro du tag précédent, nous n'allons pas utiliser de Gith
 commande.
 
 Allez sur votre workflow backend (workflow_backend.yml) et ajouter après le dernier step la ligne de commande suivante (
-attention à l'indentation) :
+attention à l'indentation) :  
 ``- run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*``.
 
 Pousser vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
@@ -69,9 +69,11 @@ intéressantes, surtout pour choisir la façon dont vous allez incrémenter le n
 
 Allez sur votre workflow backend (workflow_backend.yaml) et ajouter après le dernier step la ligne de commande
 suivante (attention à l'indentation) :  
-``- id: nextversion 
-    name: next release version 
-    uses: jenkins-x-plugins/jx-release-version@v2.6.1``
+```
+- id: nextversion 
+  name: next release version 
+  uses: jenkins-x-plugins/jx-release-version@v2.6.1
+```
 
 **Avez-vous remarqué ?**
 Ici nous avons donné un id à notre step. Cela va nous aider à exploiter la donnée calculée par la suite.
@@ -103,12 +105,14 @@ Mais il faut que le nom soit celui calculé dans le step précédent ! Vous vous
 haut? Grâce à cela on va appeler la variable ``steps.nextversion.outputs.version``.
 
 Dans notre workflow nous allons donc saisir le step suivant :  
-``- name: Release 
-    uses: softprops/action-gh-release@v1 
-    with:
-        tag_name: ${{ steps.nextversion.outputs.version }} 
-        generate_release_notes: true 
-        target_commitish: ${{ github.ref }}``
+```
+- name: Release 
+  uses: softprops/action-gh-release@v1 
+  with:
+      tag_name: ${{ steps.nextversion.outputs.version }} 
+      generate_release_notes: true 
+      target_commitish: ${{ github.ref }}
+```
 
 Pousser vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
 déroulement du workflow. Si toutes les étapes se sont bien déroulées, vous devez voir un nouveau tag sur la page
