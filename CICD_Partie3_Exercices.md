@@ -98,11 +98,11 @@ Dans la documentation, on peut voir plusieurs options intéressantes :
 
 N'hésitez pas à consulter la documentation de la Github Action pour découvrir les autres options afin d'optimiser vos
 releases !
-Dans notre cas, nous allons générer la release note automatiquement (generate_release_notes). Nous allons aussi aussi
+Dans notre cas, nous allons générer la release note automatiquement (generate_release_notes). Nous allons aussi
 référencer le tag créé dans la release. De plus, nous allons imposer un nom pour le tag (tag_name). Si on laisse
-l'option par défault, la Github Action va prendre le *tag actuel* comme nom de tag.  
-Mais il faut que le nom soit celui calculé dans le step précédent ! Vous vous rappelez de l'id dont on a parlé plus
-haut? Grâce à cela on va appeler la variable ``steps.nextversion.outputs.version``.
+l'option par défaut, la Github Action va prendre le *tag actuel* comme nom de tag.  
+Mais il faut que le nom soit celui calculé dans le step précédent ! Vous vous rappelez l'id dont on a parlé plus
+haut ? Grâce à cela on va appeler la variable ``steps.nextversion.outputs.version``.
 
 Dans notre workflow nous allons donc saisir le step suivant :  
 ```
@@ -121,3 +121,10 @@ principale de votre projet.
 ![tag](images/CICD/Release/CICD_release_accueil.jpg)
 
 ![tag](images/CICD/Release/CICD_release.jpg)
+
+## A vous de jouer ! 
+
+Vous devez maintenant réaliser les mêmes étapes sur votre workflow front.
+Ne vous précipitez pas et pousser votre commit à chaque step pour identifier les potentiels problèmes !
+
+La correction se fera en vidéo à la fin de l'étape suivante. 
