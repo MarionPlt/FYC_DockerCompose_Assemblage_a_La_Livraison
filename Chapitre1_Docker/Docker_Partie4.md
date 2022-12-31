@@ -13,7 +13,7 @@ Certaines images sont certifiées par Docker, prenez les en priorité pour forge
 qu'elles sont bien documentées, qu'il y a des bonnes pratiques à suivre et des explications pour mettre en place l'image
 sur votre Docker.  
 
-![Official Image Docker](images/docker-hub/officialImages.jpg)  
+![Official Image Docker](../images/docker-hub/officialImages.jpg)  
 
 
 Les images officielles sont généralement des outils de base (OS, base de données, langages de programmation) qui vont
@@ -33,7 +33,7 @@ Si vous n'avez pas créé de compte Docker à l'installation, veuillez le faire 
 
 Vous pouvez ensuite accéder à votre espace de stockage sur Docker Hub.
 
-![Official Image Docker](images/docker-hub/profileDockerHub.jpg)
+![Official Image Docker](../images/docker-hub/profileDockerHub.jpg)
 
 
 Vous pouvez avoir accès à des répertoires publics gratuits pour stocker vos images. Si vous choisissez d'avoir des

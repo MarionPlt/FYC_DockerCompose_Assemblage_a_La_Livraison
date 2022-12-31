@@ -33,7 +33,7 @@ Nous allons tout d'abord récupérer [l'image Docker pmarionp/bdd_vault.](https:
 **Commençons donc par la commande ``docker pull pmarionp/bdd_vault``. 
 Vous pouvez ensuite lister les images présentes sur votre Docker pour vous assurer du bon téléchargement.**
 
-![](images/docker-exercice/docker_pull_bdd.png)  
+![](../images/docker-exercice/docker_pull_bdd.png)  
 <br>
 <br>
 <br>
@@ -57,7 +57,7 @@ Pensez à connecter votre conteneur au network (soit dans la ligne de commande, 
 Listez ensuite les conteneurs en cours d'éxécution pour vérifier du bon fonctionnement de votre commande.**
 
 
-![](images/docker-exercice/docker_run_bdd.png)  
+![](../images/docker-exercice/docker_run_bdd.png)  
 
 ### Le backend .NET
 
@@ -68,7 +68,7 @@ Nous allons ensuite récupérer [l'image Docker pmarionp/back_vault.](https://hu
 **Commençons donc par la commande ``docker pull pmarionp/back_vault``.
 Vous pouvez ensuite lister les images présentes sur votre Docker pour vous assurer du bon téléchargement.**
 
-![](images/docker-exercice/docker_pull_back.png)  
+![](../images/docker-exercice/docker_pull_back.png)  
 <br>
 <br>
 <br>
@@ -83,17 +83,17 @@ Si vous choisissez un autre port, pensez à le prendre en compte dans les comman
 Pensez à connecter votre conteneur au network (soit dans la ligne de commande, soit dans un second temps).
 Listez ensuite les conteneurs en cours d'éxécution pour vérifier du bon fonctionnement de votre commande.**
 
-![](images/docker-exercice/docker_run_back.png)  
+![](../images/docker-exercice/docker_run_back.png)  
 <br>
 <br>
 <br>
 À partir de cette étape, si vous avez bien lu la documentation de l'image pmarionp/back_vault, vous pouvez accéder au swagger du backend .NET en allant dans votre outil de
 navigation favori et en allant sur l'adresse http://localhost:5000/swagger.
-![](images/docker-exercice/swagger.png)
+![](../images/docker-exercice/swagger.png)
 
 Afin de s'assurer de la bonne connexion entre la base de donnée et le backend, nous allons insérer un nouveau livre en base.
 Cliquez sur la ligne POST/Book puis sur le bouton "Try it out". 
-![](images/docker-exercice/swagger_book.png)
+![](../images/docker-exercice/swagger_book.png)
 
 Insérez ensuite les données suivantes puis appuyez sur "Execute".
 
@@ -111,7 +111,7 @@ Insérez ensuite les données suivantes puis appuyez sur "Execute".
 ``
 
 Vous devez avoir un retour 200 de l'API ! 
-![](images/docker-exercice/swagger_POST.png)
+![](../images/docker-exercice/swagger_POST.png)
 
 
 

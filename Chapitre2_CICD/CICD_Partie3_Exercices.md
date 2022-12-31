@@ -82,7 +82,7 @@ Poussez vos modifications sur votre répertoire distant et allez ensuite dans l'
 déroulement du workflow. Si toutes les étapes se sont bien déroulées, vous devez voir un nouveau tag dans la liste des
 tags de votre projet.
 
-![tag](images/CICD/Release/CICD_tags.jpg)
+![tag](../images/CICD/Release/CICD_tags.jpg)
 
 ### Etape 3 : publication de la nouvelle release
 
@@ -118,13 +118,13 @@ Poussez vos modifications sur votre répertoire distant et allez ensuite dans l'
 déroulement du workflow. Si toutes les étapes se sont bien déroulées, vous devez voir un nouveau tag sur la page
 principale de votre projet.
 
-![tag](images/CICD/Release/CICD_release_accueil.jpg)
+![tag](../images/CICD/Release/CICD_release_accueil.jpg)
 
-![tag](images/CICD/Release/CICD_release.jpg)
+![tag](../images/CICD/Release/CICD_release.jpg)
 
 ## A vous de jouer ! 
 
 Vous devez maintenant réaliser les mêmes étapes sur votre workflow front.
 Ne vous précipitez pas et poussez votre commit à chaque step pour identifier les potentiels problèmes !
 
-La correction se fera en vidéo à la fin de l'étape suivante. 
+La correction se fera en vidéo ! 
