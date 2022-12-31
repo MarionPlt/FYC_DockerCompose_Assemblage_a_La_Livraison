@@ -54,7 +54,7 @@ et de le pousser sur votre répertoire distant avec ``git push --tags``.
 Pour connaitre le numéro du tag précédent, nous n'allons pas utiliser de Github Action, mais simplement une ligne de
 commande.
 
-Allez sur votre workflow backend (workflow_backend.yml) et ajouter après le dernier step la ligne de commande suivante (
+Allez sur votre workflow backend (workflow_backend.yaml) et ajouter après le dernier step la ligne de commande suivante (
 attention à l'indentation) :  
 ``- run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*``.
 
