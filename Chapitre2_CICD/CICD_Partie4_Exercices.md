@@ -3,7 +3,7 @@
 ![previously](../images/previously.jpg)
 
 Petit retour en arrière : dans la partie DockerHub, nous avons mis à jour le docker-compose.yaml en remplaçant les images
-locales par des images distantes. Grâce à ça, quand un utilisateur veut lancer l'application N-tier, il n'a plus qu'une
+locales par des images distantes. Grâce à ça, quand un utilisateur veut lancer l'application N-tiers, il n'a plus qu'une
 seule commande à exécuter (``docker compose up``), et il n'a plus à forger des images locales à la main.  
 
 Maintenant que nous avons mis à jour notre code et que nous avons fait une release sur Github, il faut mettre à jour
@@ -98,7 +98,7 @@ Le tag latest ne peut exister qu'une seule fois : s'il est déjà attribué à u
 Poussez vos modifications sur votre répertoire distant Github et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
 déroulement du workflow.
 
-Allez ensuite sur votre Docker Hub pour voir apparaitre une nouvelle image <username>/back_vault, elle doit apparaitre sous deux tags.
+Allez ensuite sur votre Docker Hub pour voir apparaitre une nouvelle image ``<username>/back_vault``, elle doit apparaitre sous deux tags.
 
 ![new tag on Docker Hub](../images/CICD/MajDocker/newTagDocker.jpg)
 
