@@ -58,7 +58,7 @@ Allez sur votre workflow backend (workflow_backend.yaml) et ajouter après le de
 attention à l'indentation) :  
 ``- run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*``.
 
-Pousser vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
+Poussez vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
 déroulement du workflow.
 
 ### Etape 2 : calcul de la nouvelle version
@@ -78,7 +78,7 @@ suivante (attention à l'indentation) :
 **Avez-vous remarqué ?**
 Ici nous avons donné un id à notre step. Cela va nous aider à exploiter la donnée calculée par la suite.
 
-Pousser vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
+Poussez vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
 déroulement du workflow. Si toutes les étapes se sont bien déroulées, vous devez voir un nouveau tag dans la liste des
 tags de votre projet.
 
@@ -114,7 +114,7 @@ Dans notre workflow nous allons donc saisir le step suivant :
       target_commitish: ${{ github.ref }}
 ```
 
-Pousser vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
+Poussez vos modifications sur votre répertoire distant et allez ensuite dans l'onglet "Actions" pour vous assurer du bon
 déroulement du workflow. Si toutes les étapes se sont bien déroulées, vous devez voir un nouveau tag sur la page
 principale de votre projet.
 
@@ -125,6 +125,6 @@ principale de votre projet.
 ## A vous de jouer ! 
 
 Vous devez maintenant réaliser les mêmes étapes sur votre workflow front.
-Ne vous précipitez pas et pousser votre commit à chaque step pour identifier les potentiels problèmes !
+Ne vous précipitez pas et poussez votre commit à chaque step pour identifier les potentiels problèmes !
 
 La correction se fera en vidéo à la fin de l'étape suivante. 
