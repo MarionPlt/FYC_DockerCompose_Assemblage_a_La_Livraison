@@ -10,6 +10,8 @@ https://docs.github.com/en/repositories/releasing-projects-on-github/about-relea
 
 https://docs.github.com/en/actions/security-guides/encrypted-secrets  
 
+https://docs.specflow.org/projects/specflow-livingdoc/en/latest/sbsguides/sbscli.html#step-3-viewing-livingdoc
+
 ##Github Actions :
 
 https://github.com/actions/checkout
