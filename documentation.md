@@ -8,7 +8,11 @@ https://docs.github.com/en/actions/using-workflows
 
 https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases  
 
-https://docs.github.com/en/actions/security-guides/encrypted-secrets  
+https://docs.github.com/en/actions/security-guides/encrypted-secrets
+
+https://learn.microsoft.com/fr-fr/dotnet/core/tools/dotnet-test
+
+https://learn.microsoft.com/fr-fr/dotnet/api/microsoft.build.framework.loggerverbosity?view=msbuild-17-netcore
 
 https://docs.specflow.org/projects/specflow-livingdoc/en/latest/sbsguides/sbscli.html#step-3-viewing-livingdoc
 
@@ -17,6 +21,8 @@ https://docs.specflow.org/projects/specflow-livingdoc/en/latest/sbsguides/sbscli
 https://github.com/actions/checkout
 
 https://github.com/actions/setup-dotnet
+
+https://github.com/marketplace/actions/dotnet-tests
 
 https://github.com/actions/upload-artifact
 
