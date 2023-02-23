@@ -127,4 +127,4 @@ principale de votre projet.
 Vous devez maintenant réaliser les mêmes étapes sur votre workflow front.
 Ne vous précipitez pas et poussez votre commit à chaque step pour identifier les potentiels problèmes !
 
-La correction se fera en vidéo ! 
+La correction se fera en vidéo juste [ici](https://www.youtube.com/watch?v=Nv5Ph5KGb30&t=1s)! 
