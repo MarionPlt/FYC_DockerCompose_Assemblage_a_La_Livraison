@@ -108,5 +108,5 @@ Allez ensuite sur votre Docker Hub pour voir apparaitre une nouvelle image ``<us
 Vous devez maintenant réaliser les mêmes étapes sur votre workflow front.
 Ne vous précipitez pas et poussez votre commit à chaque step pour identifier les potentiels problèmes !
 
-La correction se fera en vidéo ! 
+La correction se fera en vidéo juste [ici](https://www.youtube.com/watch?v=m7x7TtR58ys&t=3s)! 
 
