@@ -1,6 +1,12 @@
-# FindYourCourse_Documentation
+# Pourquoi ce cours?
 
-Project ESGI M2 Find Your Course  : "DOCKER COMPOSE : DE L'ASSEMBLAGE D'IMAGES A LA LIVRAISON"
+Ce cours correspond à notre mémoire de master (Find Your Course) à l'école ESGI Lyon.
+Il a été écrit par 3 paires de mains : 
+- Antoine CHATELARD
+- Marion PLAYOUT
+- Julien POTY
+
+Le cours s'intitule **Docker Compose : de l'assemblage d'images à la livraison**
 
 # Prérequis
 Pour appréhender ce cours vous devez savoir utiliser Git et avoir des notions de **CI/CD**.
