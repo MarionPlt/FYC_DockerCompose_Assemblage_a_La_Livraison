@@ -54,6 +54,7 @@ Chaque étape contient :
 
 Ne restez pas bloqué ! Tout au long des exercices, vous pourrez vous référer à notre [dépôt Github](https://github.com/a-chatelard/FYC-dock-co) pour la correction : à chaque exercice sa branche de correction ! 
 
-
+Une courte vidéo d'introduction [ici](https://www.youtube.com/watch?v=BLCrtRmNaNk)
 
 ### Vous êtes prêt/e ? C'est parti ! 
+
