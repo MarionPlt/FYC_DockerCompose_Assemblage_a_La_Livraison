@@ -10,7 +10,7 @@ De plus, Git doit être installé sur votre machine. Un IDE n'est pas obligatoir
 
 # Pourquoi Docker ? 
 
-![Bah ça marche](../images/bahcamarche.jpg)
+![Bah ça marche](/images/bahcamarche.jpg)
 
 
 Il est très fréquent pendant nos études et dans notre entreprise de travailler en groupe. Mais pour partager efficacement notre code, il faut idéalement avoir le même environnement de travail.
@@ -27,7 +27,7 @@ Dans une première partie, nous vous proposons d'apprendre comment installer Doc
 
 A l'aide d'une application  N-tiers basique (Vault),  vous allez construire les images Docker de chaque tiers applicatif. Pas à pas, vous allez appréhender de nouveaux outils pour automatiser votre création et votre lancement de l'application Vault grâce aux **Dockerfile** et à **Docker compose**. Puis vous allez envoyer ces images sur un répertoire distant (**DockerHub**) et utiliser ces images distantes. 
 
-![Docker compose](../images/compose.jpg)
+![Docker compose](/images/compose.jpg)
 
 
 
@@ -43,7 +43,7 @@ Etape par étape, vous aller forger le CI/CD de l'application Vault afin de réa
 # Comment se découpe le cours ? 
 
 
-![Parcours](../images/parcours.jpg)
+![Parcours](/images/parcours.jpg)
 
 Chaque étape contient : 
 - une partie théorique
