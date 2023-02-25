@@ -5,7 +5,7 @@
 On a tous rencontré ce problème en travaillant sur un projet à plusieurs. Le fameux projet qui fonctionne bien chez une personne et pas chez une autre.
 Le projet qui fonctionne en mode "développement" et qui ne fonctionne plus en mode "production".
 
-![Meme Docker, source https://9gag.com/gag/abvyb7r?ref=ios](../images/docker_meme.jpg)  
+![Meme Docker, source https://9gag.com/gag/abvyb7r?ref=ios](../../images/docker_meme.jpg)  
 
 Et si on livrait plus que du code ? Et si on livrait tout un package pour lancer notre application facilement ? 
    
@@ -52,17 +52,17 @@ Lorsque vous lancez une image, le daemon Docker va rechercher l'image sur votre 
   
 Lancez la commande une première fois : si vous n'avez encore rien lancé sur votre Docker la liste des images locales devrait être vide. 
 
-![liste images docker initiale](../images/docker-image/docker-image0-cmd.png)   
-![liste images docker desktop initiale](../images/docker-image/docker-image0.png)   
+![liste images docker initiale](../../images/docker-image/docker-image0-cmd.png)   
+![liste images docker desktop initiale](../../images/docker-image/docker-image0.png)   
  
 Maintenant, récupérez l'image *hello-world*, sans toutefois lancer le conteneur, grâce à la commande `docker pull hello-world` .
 
-![pull hello-world](../images/docker-image/docker_pull_hello-world.png)  
+![pull hello-world](../../images/docker-image/docker_pull_hello-world.png)  
 
 Listez à nouveau les conteneurs locaux : vous devriez voir apparaitre *hello-world* dans votre liste. 
 
-![liste images docker initiale](../images/docker-image/docker-image1-cmd.png)   
-![liste images docker desktop initiale](../images/docker-image/docker-image1.png)  
+![liste images docker initiale](../../images/docker-image/docker-image1-cmd.png)   
+![liste images docker desktop initiale](../../images/docker-image/docker-image1.png)  
 
 Pour réaliser cette opération avec le Docker Desktop, il vous suffirait de rentrer le nom de l'image dans la barre de recherche.
   
@@ -72,16 +72,16 @@ Les commandes Docker sont assez intuitives, il vous suffit de spécifier le <tag
 
 Récupérer l'image *hello-world* avec le tag `linux` , si vous listez à nouveau les images locales vous devez voir à présent l'image *hello-world* sous deux tags différents.  
 
-![liste images docker 1 image 2 tags](../images/docker-image/docker-image2-cmd.png)   
-![liste images docker desktop 1 image 2 tags](../images/docker-image/docker-image2.png)
+![liste images docker 1 image 2 tags](../../images/docker-image/docker-image2-cmd.png)   
+![liste images docker desktop 1 image 2 tags](../../images/docker-image/docker-image2.png)
 
 #### docker image rm  
 Nous avons maintenant deux images *hello-world* avec deux tags différents sur notre machine. Nous allons en garder une seule pour plus de simplicité. 
 Pour supprimer une image stockée en local, vous pouvez utiliser le Docker Desktop ou bien saisir la commande `docker image rm <image>:<tag>` .  
 Supprimez l'image *hello-world* qui possède le tag `linux`, pour ne garder que la `latest` . Vérifiez en listant les images restantes en local.  
 
-![supprimer une image docker](../images/docker-image/docker-image2-delete-cmd.png)   
-![supprimer une image docker desktop](../images/docker-image/docker-image2-delete.png)   
+![supprimer une image docker](../../images/docker-image/docker-image2-delete-cmd.png)   
+![supprimer une image docker desktop](../../images/docker-image/docker-image2-delete.png)   
 
 
 #### docker image prune  
@@ -124,8 +124,8 @@ Permet d'associer un volume définit à un conteneur. Un volume permet de stocke
 
 Dans notre cas, nous allons lancer un conteneur grâce à l'image *hello-word*, nous allons nommer le conteneur "test-hello-world".  
 
-![lancer un conteneur nommé](../images/docker-container/docker-container-test-helloWorld-cmd.png)
-![lancer un conteneur nommé Desktop](../images/docker-container/docker-container-test-helloWorld.png)  
+![lancer un conteneur nommé](../../images/docker-container/docker-container-test-helloWorld-cmd.png)
+![lancer un conteneur nommé Desktop](../../images/docker-container/docker-container-test-helloWorld.png)  
 
 **Félicitations, vous avez lancé votre premier conteneur Docker !**  
 
@@ -136,7 +136,7 @@ Cette commande peut se simplifier par ``docker ps``.
 Pour voir tous les conteneurs existants, allumés ou non, il suffit de rajouter l'option ``-a`` ou ``--all``.
 Le conteneur "test-hello-world" est paramétré pour s'éteindre immédiatement. Lancez la commande pour lister les conteneurs.  
 
-![lister les conteneurs](../images/docker-container/docker-container-liste.png)
+![lister les conteneurs](../../images/docker-container/docker-container-liste.png)
 
 **Avez-vous remarqué le paramètre ID ?**
 Parfois les noms des images ou des conteneurs sont complexes et donc sources d'erreur lors de la saisie en ligne de commande. Chaque image ou conteneur a un identifiant associé, et nous pouvons donc remplacer le nom de l'image par son ID.
@@ -147,7 +147,7 @@ Vous le trouvez lui aussi trop long ? Sachez qu'il suffit de saisir les premie
 Ces commandes sont assez explicites : on peut (re)lancer un conteneur ou l'éteindre.  
 Comme le conteneur "test-hello-world" s'éteint automatiquement, nous allons tester ici uniquement la commande ``start`` . Lancez le conteneur grâce à son ID, puis listez *tous* les conteneurs. 
 
-![lancer le conteneur](../images/docker-container/docker-container-start-cmd.png)  
+![lancer le conteneur](../../images/docker-container/docker-container-start-cmd.png)  
 
 Vous pouvez voir ici que le conteneur "test-hello-world" s'est lancé grâce à son statut.
 

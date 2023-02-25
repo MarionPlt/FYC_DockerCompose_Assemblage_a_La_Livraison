@@ -1,6 +1,6 @@
 # Félicitations !
 
-![felicitation](../images/felicitation.jpg)
+![felicitation](../../images/felicitation.jpg)
 
 Vous avez pu voir dans ce chapitre :
 
