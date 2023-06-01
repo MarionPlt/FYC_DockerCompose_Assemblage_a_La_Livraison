@@ -34,8 +34,7 @@ Enfin, Docker peut tourner sur n'importe quelle OS.
   
 
 ## Commandes de base
-**ATTENTION REVOIR ET UNIFIER LE VOTRE MACHINE / MA MACHINE, LE ON/VOUS/NOUS**   
-Voyons ici quelques commandes basiques que nous allons réutiliser tout le long du cours.  
+ Voyons ici quelques commandes basiques que nous allons réutiliser tout le long du cours.  
 Cette liste est loin d'etre exhaustive, n'hésitez pas à consulter la [documentation Docker](https://docs.docker.com/) pour découvrir toutes les commandes qui sont à votre disposition !
 
 Nous allons tester plusieurs de ces commandes avec l'image *hello-world* de Docker. Nous allons les présenter en ligne de commande pour mieux les intégrer.   
